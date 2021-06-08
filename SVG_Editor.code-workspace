@@ -1,0 +1,22 @@
+{
+    "folders": [
+		{
+			"path": "D:\\Formation Web\\Challenge Git\\stats-preview-card-component-main"
+		},
+		{
+			"path": "D:\\Formation Web\\Challenge Git\\3-column-preview-card-component-main"
+		},
+		{
+			"path": "D:\\Formation Web\\Challenge Git\\profile-card-component-main"
+		},
+		{
+			"path": "D:\\Formation Web\\Projets\\Javascript"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Javascript"
+	}
+}
