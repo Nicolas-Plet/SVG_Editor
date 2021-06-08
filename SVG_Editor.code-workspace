@@ -1,22 +1,13 @@
 {
     "folders": [
 		{
-			"path": "D:\\Formation Web\\Challenge Git\\stats-preview-card-component-main"
-		},
-		{
-			"path": "D:\\Formation Web\\Challenge Git\\3-column-preview-card-component-main"
-		},
-		{
-			"path": "D:\\Formation Web\\Challenge Git\\profile-card-component-main"
-		},
-		{
-			"path": "D:\\Formation Web\\Projets\\Javascript"
+			"path": "D:\\Formation Web\\Projets\\SVG_Editor"
 		},
 		{
 			"path": "."
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Javascript"
+		"liveServer.settings.multiRootWorkspaceName": "SVG_Editor"
 	}
 }
