@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+#editor {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    /* background-color: blue; */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+
+.title_menu {
+}
+
+.container_menu {
+
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* ------------------------------------------Menu text-------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+
+#text_menu {
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.text_content{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px black solid;
+}
+
+.text_content label{
+    margin-top: 10px;
+}
+
+.text_content input{
+    width: 200px;
+}
+
+#text_simple_color{
+    overflow: hidden;
+    height: 100%;
+}
+
+#text_gradient{
+    overflow: hidden;
+    height: 0;
+}
