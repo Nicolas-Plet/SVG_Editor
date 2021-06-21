@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <div id="editor">
-            
+
         </div>
         <div class="menu">
             <h1 class="title_menu">Menu SVG</h1>
@@ -33,8 +33,10 @@
                         <Label>Taille de la police</Label>
                         <input type="number" id="input_font">
                         <Label>Couleur du text</Label>
-                        <Label>Utiliser un gradient : <input type="checkbox" name="" id="input_gradient_checkbox"></Label>
+                        <Label>Utiliser un gradient : <input type="checkbox" name=""
+                                id="input_gradient_checkbox"></Label>
                         <div id="text_simple_color">
+                            <canvas id="colorCanvas" class="color_canvas" width="100%" height="100%"></canvas>
                             <input type="color" id="input_text_color">
                         </div>
                         <div id="text_gradient">

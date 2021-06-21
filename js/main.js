@@ -1,5 +1,6 @@
 import { svg_editor } from "./modules/svg_editor.mjs"
 import { menu_svg_editor } from "./modules/menu_svg_editor.mjs"
+import { color_picker } from "./modules/color_picker.mjs"
 
 // ----------------------------------------------------------------------------------
 // ------------------------------------------Initialize Display----------------------
@@ -21,6 +22,7 @@ var editor = document.getElementById("editor");
 // svg_editor.SetStroke(circle, "red", "3px");
 // svg_editor.SetColor(circle, "black");
 
+color_picker.Initialize();
 svg_editor.Initialize(editor);
 menu_svg_editor.Initialize();
 

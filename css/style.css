@@ -68,3 +68,8 @@
     overflow: hidden;
     height: 0;
 }
+
+
+.color_canvas {
+    background-color: red;
+}
