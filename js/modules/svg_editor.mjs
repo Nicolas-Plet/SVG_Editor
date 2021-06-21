@@ -27,6 +27,8 @@ const svg_editor = {
         svg_editor.svg.style.width = svg_editor.window_size_x;
         svg_editor.svg.style.height = svg_editor.window_size_y;
         svg_editor.svg.viewbox = "0 0 " + (svg_editor.window_size_x / 100).toString() + " " + (svg_editor.window_size_y / 100).toString();
+        //Empeche la selection du text
+        svg_editor.svg.onselectstart = (e) => { e.preventDefault(); };
 
         svg_editor.svg.appendChild(svg_editor.defs);
         svg_editor.svg.appendChild(svg_editor.graphics);
@@ -35,8 +37,10 @@ const svg_editor = {
         svg_editor.SetPosition(0, 0);
         svg_editor.SetColor("white");
         svg_editor.SetStroke("black", "2px");
+        
 
         parent.appendChild(svg_editor.svg);
+
     },
 
 
@@ -77,7 +81,9 @@ const svg_editor = {
 
     AddCircle: function (rayon) {
         let newCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-        newCircle.setAttributeNS(null, 'r', rayon);
+        newCircle.setAttributeNS(null, 'r', rayon + "px");
+        newCircle.setAttributeNS(null, 'cx', 0 + rayon);
+        newCircle.setAttributeNS(null, 'cy', 0 + rayon);
 
         svg_editor.actual_selection = newCircle;
         svg_editor.SetClickSelection("circle", newCircle);
@@ -86,6 +92,15 @@ const svg_editor = {
         svg_editor.SetPosition(0, 0);
         svg_editor.SetColor("black");
         svg_editor.graphics.appendChild(newCircle);
+    },
+
+    AddLine: function(pos1, pos2) {
+        let newLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        newLine.setAttributeNS(null, 'x1', 0);
+        newLine.setAttributeNS(null, 'y1', 0);
+        newLine.setAttributeNS(null, 'x2', 10);
+        newLine.setAttributeNS(null, 'y2', 10);
+
     },
 
     AddGradient: function (color_start, color_center, color_end) {
@@ -170,6 +185,12 @@ const svg_editor = {
                 }
             }
         })
+
+    },
+
+    DisplayBorderSelection: function () {
+        let boundingBox = svg_editor.actual_selection.getBoundingClientRect();
+
 
     },
 

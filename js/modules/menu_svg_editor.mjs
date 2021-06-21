@@ -70,7 +70,7 @@ const menu_svg_editor = {
         });
 
         menu_svg_editor.add_circle_button.addEventListener("click", function () {
-            svg_editor.AddCircle("25px");
+            svg_editor.AddCircle(25);
             // menu_svg_editor.DisplayMenu("circle");
         });
 
